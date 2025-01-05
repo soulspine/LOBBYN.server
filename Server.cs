@@ -35,7 +35,7 @@ namespace LOBBYN.server
             Task.Run(async () =>
             {
                 await Task.Delay(30 * 1000); // 30 seconds
-                if (!Server.unauthorizedSockets.ContainsKey(websocketKey))
+                if (!Server.authorizedSockets.ContainsKey(websocketKey))
                 {
                     Context.WebSocket.Close(CloseStatusCode.PolicyViolation, "Timed out");
                 }
