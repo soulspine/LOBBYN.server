@@ -9,7 +9,12 @@
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Salaros.ConfigParser" Version="0.3.8" />
     <PackageReference Include="WebSocketSharp" Version="1.0.3-rc11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LOBBYN.ClassLibrary\LOBBYN.ClassLibrary.csproj" />
   </ItemGroup>
 
 </Project>
